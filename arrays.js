@@ -13,7 +13,8 @@ function addElementToEndOfArray(array, element){
 }
 
 function destructivelyAddElementToEndOfArray(array, element){
-  return array = array.push(element);
+  console.log(array.push(element))
+  return array.push(element);
 }
 
 function destructivelyRemoveElementFromBeginningOfArray(array){
@@ -31,3 +32,5 @@ function destructivelyRemoveElementFromEndOfArray(array){
 function removeElementFromEndOfArray(array){
   array.slice(0, array.length - 1)
 }
+
+destructivelyAddElementToEndOfArray([1,2], 4)
