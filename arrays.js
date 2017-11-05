@@ -15,3 +15,19 @@ function addElementToEndOfArray(array, element){
 function destructivelyAddElementToEndOfArray(array, element){
   return array.push(element)
 }
+
+function destructivelyRemoveElementFromBeginningOfArray(array){
+  return array.shift();
+}
+
+function removeElementFromBeginningOfArray(array){
+  return array.slice(1)
+}
+
+function destructivelyRemoveElementFromEndOfArray(array){
+  return array.pop()
+}
+
+function removeElementFromEndOfArray(array){
+  array.slice(0, array.length - 1)
+}
